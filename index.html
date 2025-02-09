@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="ما اللون الذي تبحث عنه اليوم؟" oninput="searchColors()" />
+    <div id="suggestions" class="suggestions"></div>
+  </div>
+  
+  <div class="filters">
+    <button onclick="filterByCategory('فخمة')">فخمة</button>
+    <button onclick="filterByCategory('مرحة')">مرحة</button>
+    <button onclick="filterByCategory('هادئة')">هادئة</button>
+    <button onclick="filterByCategory('تدرج لوني')">تدرج لوني</button>
+    <button onclick="clearFilters()">إظهار الجميع</button>
+  </div>
+
+  <div id="color-container" class="color-container">
+    <!-- سيتم عرض الفريمات هنا -->
+  </div>
+
+  <div id="colorModal" class="modal">
+    <div id="color-modal-container" class="modal-container">
+      <!-- سيتم عرض الألوان داخل المودال هنا -->
+      <button id="copy-all-btn">نسخ جميع الألوان</button>
+      <button id="close-modal-btn">إغلاق</button>
+    </div>
+  </div>
+
+  <div id="copyNotification" class="copy-notification">
+    تم نسخ اللون إلى الحافظة
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>ody>
+</html>
